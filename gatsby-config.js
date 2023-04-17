@@ -30,6 +30,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-7F1SE12JLR"],
+      },
+    },
+    {
       resolve: `gatsby-theme-landing-page`,
       options: contentfulConfig,
     },
