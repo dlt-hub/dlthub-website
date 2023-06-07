@@ -55,7 +55,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Space Mono`, `Karla`],
+        fonts: [`Space Mono\:300,400,400i,700`, `Karla`],
         display: "swap",
       },
     },
