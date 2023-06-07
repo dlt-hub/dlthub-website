@@ -9,8 +9,8 @@ export default function Layout(props) {
   return (
     <div className={[cssVars.root, styles.root].join(" ")}>
       <Head {...props} />
-      <header className={styles.header}>
-        <headeri className={styles.headeri}>
+      <div className={styles.header}>
+        <div className={styles.headeri}>
           <img
             src={"../../dlthub-logo.png"}
             alt="dltHub logo"
@@ -23,7 +23,7 @@ export default function Layout(props) {
             <a href="/why">why dlt?</a>
             <a href="/about">about us</a>
           </div>
-          <images className={styles.images}>
+          <div className={styles.images}>
             <a href="https://github.com/dlt-hub/dlt">
               <img
                 src={"../../github-logo.png"}
@@ -40,19 +40,19 @@ export default function Layout(props) {
                 height="32"
               ></img>
             </a>
-          </images>
-        </headeri>
-      </header>
+          </div>
+        </div>
+      </div>
       <main className={styles.main}>{props.children}</main>
-      <footer className={styles.footer}>
-        <footeri className={styles.footeri}>
+      <div className={styles.footer}>
+        <div className={styles.footeri}>
           <span>2023 dlthub</span>
           <div className={styles.linkwrapper}>
             <a href="https://github.com/dlt-hub/dlt">GitHub</a>
             <a href="https://apply.workable.com/dlthub/">Careers</a>
           </div>
-        </footeri>
-      </footer>
+        </div>
+      </div>
     </div>
   );
 }

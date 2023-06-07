@@ -4,8 +4,8 @@
  */
 .root {
   /* typography */
-  --font: "Inter", system-ui, sans-serif;
-  --font-heading: "Inter", system-ui, sans-serif;
+  --font: "Karla", system-ui, sans-serif;
+  --font-heading: "Space Mono", monospace;
   --line-height: 1.5;
   --line-height-heading: 1.25;
   --font-size-1: 12px;
@@ -21,7 +21,7 @@
   --text-color: #191937;
   --text-color-secondary: #191937;
   --background-color: white;
-  --link-color: #191937;
+  --link-color: #4c4898;
   --link-hover-color: #05a;
   --primary-color: #191937;
   --secondary-color: #191937;

@@ -11,10 +11,13 @@ export default function LandingPage(props) {
   return (
     <Layout {...props.data.page}>
       <Page>
-        {sections.map((section) => {
-          const Component = Components[section.component] || DevDebug;
-          return Component ? <Component key={section.id} {...section} /> : null;
-        })}
+        {sections &&
+          sections.map((section) => {
+            const Component = Components[section.component] || DevDebug;
+            return Component ? (
+              <Component key={section.id} {...section} />
+            ) : null;
+          })}
       </Page>
     </Layout>
   );
