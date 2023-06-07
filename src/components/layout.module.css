@@ -41,12 +41,6 @@
 
 .headeri .headerlinks a {
   margin-right: 24px;
-  font-family: "Space Mono", monospace;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #4c4898;
 }
 
 .headeri .images {
@@ -94,10 +88,6 @@
   color: inherit;
   display: flex;
   margin-right: 10px;
-  font-family: "Space Mono", monospace;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
 }
 
 .footer .linkwrapper {
@@ -105,6 +95,20 @@
   display: flex;
 }
 
+.header a,
+.footer a,
+.header a,
+.footer span {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4c4898;
+}
+
+.header a:hover,
+.header a:focus,
 .footer a:hover,
 .footer a:focus {
   text-decoration: underline;
