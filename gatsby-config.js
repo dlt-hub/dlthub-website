@@ -52,5 +52,12 @@ module.exports = {
         icon: `src/assets/favicon.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Space Mono`],
+        display: "swap",
+      },
+    },
   ],
 };
