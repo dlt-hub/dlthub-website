@@ -9,12 +9,13 @@
 }
 
 .content {
+  text-align: center;
 }
 
 .contentCard {
   width: 400px;
   height: 300px;
-  float: left;
+  display: inline-block;
   margin: 5px;
   margin-left: 20px;
   margin-right: 0px;
