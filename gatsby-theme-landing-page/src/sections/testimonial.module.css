@@ -1,4 +1,5 @@
 .content {
+  margin-top: -50px;
 }
 
 .testimonial {
@@ -8,6 +9,8 @@
   position: relative;
   background-color: #191937;
   margin: 10px;
+  margin-left: 0px;
+  margin-right: 20px;
   color: white;
 }
 

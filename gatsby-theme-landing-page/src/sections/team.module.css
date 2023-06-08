@@ -3,6 +3,7 @@
 }
 
 .content {
+  margin-top: -50px;
 }
 
 .contentCard {
@@ -10,6 +11,8 @@
   height: 156px;
   float: left;
   margin: 5px;
+  margin-left: 0px;
+  margin-right: 10px;
   background-color: #f3ff36;
   position: relative;
 }
