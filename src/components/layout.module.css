@@ -115,3 +115,9 @@
   text-decoration: underline;
   color: var(--link-hover-color);
 }
+
+/* @media screen and (max-width: 930px) {
+  .headeri .headerlinks {
+    display: none;
+  }
+} */

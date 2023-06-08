@@ -7,6 +7,12 @@
   margin-bottom: 2em;
 }
 
+@media screen and (max-width: 800px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
 .featureContainer {
   display: flex;
   flex-direction: column;
