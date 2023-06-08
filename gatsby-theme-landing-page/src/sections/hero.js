@@ -22,11 +22,12 @@ export default function Hero({ heading, secondaryHeading, content }) {
           </Heading>
           <HeroContent {...heroContent} />
         </div>
-        <div className={styles.image}>
-          {image && (
+        {image && (
+          <div className={styles.image}>
+            (
             <GatsbyImage image={image} alt={image.title || `Hero Image`} />
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </Section>
   );
@@ -37,16 +38,17 @@ function HeroContent({ primaryText, secondaryText, links }) {
     <div>
       <MarkdownText {...primaryText} />
       <MarkdownText {...secondaryText} />
-      <div className={styles.buttonContainer}>
-        {links &&
-          links.map((link, i) => (
+      {links && (
+        <div className={styles.buttonContainer}>
+          {links.map((link, i) => (
             <Button
               key={link.id}
               {...link}
               variant={i === 0 ? "primary" : "secondary"}
             />
           ))}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
