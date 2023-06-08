@@ -1,19 +1,29 @@
 .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: var(--space-4);
+  background: #e7f6f9;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .featureContainer {
   display: flex;
   flex-direction: column;
   margin-top: var(--space-4);
-  margin-bottom: var(--space-4);
+  align-items: center;
 }
 
 .copyColumn {
   display: flex;
   order: 2;
+  padding: 8px;
+  text-align: center;
+}
+
+.imageColumn {
+  display: flex;
+  align-items: center;
 }
 
 .copyContainer {
@@ -41,35 +51,4 @@
 
 .primaryText strong {
   color: var(--primary-color);
-}
-
-.imageColumn {
-  display: flex;
-  align-items: center;
-}
-
-@media screen and (min-width: 640px) {
-  .contentContainer {
-    gap: var(--space-5);
-  }
-
-  .featureContainer {
-    flex-direction: row;
-    gap: var(--space-4);
-  }
-  .featureContainer.reverse {
-    flex-direction: row-reverse;
-  }
-
-  .featureContainer.reverse .copyColumn {
-    justify-content: flex-end;
-  }
-
-  .copyColumn {
-    width: 50%;
-  }
-
-  .imageColumn {
-    width: 50%;
-  }
 }

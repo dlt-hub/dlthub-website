@@ -10,33 +10,28 @@ import Heading from "../components/heading";
 export default function Features({ heading, secondaryHeading, content }) {
   return (
     <Section>
-      <Heading center>{heading}</Heading>
-      <Heading secondary center>
-        {secondaryHeading}
-      </Heading>
       <div className={styles.content}>
-        {content.map((item, i) => (
-          <Feature
-            {...item}
-            orientation={i % 2 === 0 ? "default" : "reverse"}
-          />
-        ))}
+        {content &&
+          content.map((item, i) => (
+            <Feature
+              {...item}
+              orientation={i % 2 === 0 ? "default" : "reverse"}
+            />
+          ))}
       </div>
     </Section>
   );
 }
 
-function Feature({
-  primaryText,
-  secondaryText,
-  image,
-  links,
-  orientation = "default",
-}) {
-  const orientationStyle = orientation === "default" ? "" : styles.reverse;
-
+function Feature({ primaryText, secondaryText, image, links }) {
   return (
-    <div className={`${styles.featureContainer} ${orientationStyle}`}>
+    <div className={styles.featureContainer}>
+      <div className={styles.imageColumn}>
+        <GatsbyImage
+          image={getImage(image)}
+          alt={(image && image.title) || getText(primaryText)}
+        />
+      </div>
       <div className={styles.copyColumn}>
         <div className={styles.copyContainer}>
           <MarkdownText
@@ -49,12 +44,6 @@ function Feature({
             {links && links.map((link) => <Link key={link.id} {...link} />)}
           </LinkContainer>
         </div>
-      </div>
-      <div className={styles.imageColumn}>
-        <GatsbyImage
-          image={getImage(image)}
-          alt={image.title || getText(primaryText)}
-        />
       </div>
     </div>
   );
