@@ -18,7 +18,7 @@ export default function Layout(props) {
           ></img>
           <div className={styles.headerlinks}>
             <a href="/">home</a>
-            <a href="/product">product, principles and vision</a>
+            <a href="/product">product</a>
             <a href="/why">why dlt?</a>
             <a href="/about">about us</a>
           </div>

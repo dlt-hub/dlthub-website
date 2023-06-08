@@ -34,9 +34,8 @@
 .headeri .headerlinks {
   display: flex;
   align-items: center;
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 8px;
+  margin-left: 40px;
 }
 
 .headeri .headerlinks a {
@@ -116,8 +115,8 @@
   color: var(--link-hover-color);
 }
 
-/* @media screen and (max-width: 930px) {
+@media screen and (max-width: 700px) {
   .headeri .headerlinks {
     display: none;
   }
-} */
+}
