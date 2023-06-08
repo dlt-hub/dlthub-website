@@ -5,7 +5,6 @@ import MarkdownText, { getText } from "../components/markdown-text";
 import Link from "../components/link";
 import LinkContainer from "../components/link-container";
 import Section from "../components/section";
-import Heading from "../components/heading";
 
 export default function Features({ heading, secondaryHeading, content }) {
   return (

@@ -50,6 +50,11 @@ export const query = graphql`
               html
             }
           }
+          tertiaryText {
+            childMarkdownRemark {
+              html
+            }
+          }
           image {
             gatsbyImageData(layout: CONSTRAINED)
             title
