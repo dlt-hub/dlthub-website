@@ -38,6 +38,10 @@ export const query = graphql`
         component
         heading
         secondaryHeading
+        image {
+          gatsbyImageData(layout: CONSTRAINED)
+          title
+        }
         content {
           id
           primaryText {

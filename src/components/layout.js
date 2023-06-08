@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import { Head } from "gatsby-theme-landing-page";
 import "../styles.css";
 import * as cssVars from "gatsby-theme-landing-page/src/styles/variables.module.css";

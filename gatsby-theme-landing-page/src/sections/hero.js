@@ -24,7 +24,6 @@ export default function Hero({ heading, secondaryHeading, content }) {
         </div>
         {image && (
           <div className={styles.image}>
-            (
             <GatsbyImage image={image} alt={image.title || `Hero Image`} />
           </div>
         )}
