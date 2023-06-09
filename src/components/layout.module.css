@@ -115,8 +115,37 @@
   color: var(--link-hover-color);
 }
 
+.hamburger {
+  display: none;
+  margin-top: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+  z/index: 100;
+}
+
 @media screen and (max-width: 700px) {
   .headeri .headerlinks {
+    position: fixed;
+    left: 0px;
+    padding-left: 30px;
+    top: 65px;
+    height: 100%;
+    flex-direction: column;
+    align-items: start;
+    background-color: white;
+    z-index: 100;
+    border-right: 1px solid var(--link-color);
+    margin-left: 0px;
     display: none;
+  }
+  .headeri .open {
+    display: flex;
+  }
+
+  .headeri .headerlinks a {
+    margin-bottom: 10px;
+  }
+  .hamburger {
+    display: block;
   }
 }

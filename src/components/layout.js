@@ -1,22 +1,37 @@
-import * as React from "react";
+import React, { useState } from "react";
 import { Head } from "gatsby-theme-landing-page";
 import "../styles.css";
 import * as cssVars from "gatsby-theme-landing-page/src/styles/variables.module.css";
 import * as styles from "./layout.module.css";
 
 export default function Layout(props) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menustyles = styles.headerlinks + " " + (isMenuOpen ? styles.open : "");
   return (
     <div className={[cssVars.root, styles.root].join(" ")}>
       <Head {...props} />
       <div className={styles.header}>
-        <div className={styles.headeri}>
+        <div className={styles.headeri} href="#">
+          <a
+            onClick={() => {
+              setIsMenuOpen(!isMenuOpen);
+            }}
+          >
+            <img
+              src={"../../hamburger.png"}
+              alt="github logo"
+              width="24"
+              height="24"
+              className={styles.hamburger}
+            ></img>
+          </a>
           <img
             src={"../../dlthub-logo.png"}
             alt="dltHub logo"
             width="103"
             height="30"
           ></img>
-          <div className={styles.headerlinks}>
+          <div className={menustyles}>
             <a href="/">home</a>
             <a href="/product">product</a>
             <a href="/why">why dlt?</a>
