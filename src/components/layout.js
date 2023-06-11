@@ -25,12 +25,14 @@ export default function Layout(props) {
               className={styles.hamburger}
             ></img>
           </a>
-          <img
-            src={"../../dlthub-logo.png"}
-            alt="dltHub logo"
-            width="103"
-            height="30"
-          ></img>
+          <a href="/">
+            <img
+              src={"../../dlthub-logo.png"}
+              alt="dltHub logo"
+              width="103"
+              height="30"
+            ></img>
+          </a>
           <div className={menustyles}>
             <a href="/">home</a>
             <a href="/product">product</a>
