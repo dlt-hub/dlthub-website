@@ -12,6 +12,7 @@ export default function Team({ heading, secondaryHeading, content }) {
           <TeamContent key={item.id} {...item} />
         ))}
       </div>
+      <div className={styles.clearall} />
     </Section>
   );
 }

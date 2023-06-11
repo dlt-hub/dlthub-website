@@ -13,8 +13,11 @@
   margin: 5px;
   margin-left: 0px;
   margin-right: 10px;
-  background-color: #f3ff36;
   position: relative;
+}
+
+.clearall {
+  clear: both;
 }
 
 .contentCard p {
@@ -23,7 +26,7 @@
 }
 
 .contentHeading {
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-3);
   margin-top: 0;
   margin-bottom: var(--space-2);
 }
@@ -34,6 +37,10 @@
 
 .contentCard:hover .contentImage {
   display: none;
+}
+
+.contentCard:hover {
+  background-color: #f3ff36;
 }
 
 .textContainer {
