@@ -1,6 +1,9 @@
 .container {
   flex-direction: column;
   gap: var(--space-5);
+  margin-left: -32px;
+  margin-right: -32px;
+  width: auto;
 }
 
 .copyContainer {
@@ -42,15 +45,22 @@
   color: var(--text-color);
 }
 
+.copyContainer {
+  background: transparent;
+}
+
+.copyContainerOdd {
+  background: #e7f6f9;
+}
+
 @media screen and (min-width: 640px) {
   .copyContainer {
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
   }
 
   .copyContainerOdd {
-    flex-direction: row;
-    background: #e7f6f9;
+    flex-direction: row-reverse;
   }
 
   .copyContent {
