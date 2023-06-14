@@ -3,15 +3,14 @@
 }
 
 .testimonial {
-  float: left;
-  width: 384px;
-  height: 830px;
   position: relative;
   background-color: #191937;
   margin: 10px;
-  margin-left: 0px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   color: white;
+  padding-bottom: 130px;
+  padding-top: 10px;
 }
 
 .testimonial:hover {
