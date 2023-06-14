@@ -14,27 +14,33 @@ export default function Copy({ heading, secondaryHeading, content }) {
         {secondaryHeading}
       </Heading>
       <Container className={styles.container}>
-        {content.map((item) => {
-          return <CopyContent key={item.id} {...item} />;
+        {content.map((item, index) => {
+          return <CopyContent key={item.id} index={index} {...item} />;
         })}
       </Container>
     </Section>
   );
 }
 
-function CopyContent({ primaryText, secondaryText, image }) {
+function CopyContent({ primaryText, secondaryText, image, index }) {
+  const className =
+    index % 2 === 0
+      ? styles.copyContainer
+      : styles.copyContainer + " " + styles.copyContainerOdd;
   return (
-    <Container className={styles.copyContainer}>
-      <GatsbyImage
-        image={getImage(image)}
-        alt={image.title || getText(primaryText)}
-      />
-      <MarkdownText {...primaryText} />
-      <AsideText {...secondaryText} />
+    <Container className={className}>
+      {image && (
+        <div className={styles.image}>
+          <GatsbyImage
+            image={getImage(image)}
+            alt={image.title || getText(primaryText)}
+          />
+        </div>
+      )}
+      <div className={styles.copyContent}>
+        <MarkdownText className={styles.copyHeading} {...primaryText} />
+        <MarkdownText className={styles.copyText} {...secondaryText} />
+      </div>
     </Container>
   );
-}
-
-function AsideText(props) {
-  return <MarkdownText className={styles.asideText} {...props} />;
 }
