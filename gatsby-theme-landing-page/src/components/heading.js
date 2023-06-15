@@ -1,5 +1,6 @@
 import React from "react";
 import * as styles from "./heading.module.css";
+import slugify from "slugify";
 
 export default function Heading({
   children,
@@ -24,7 +25,11 @@ export default function Heading({
   if (as) Component = as;
 
   return (
-    <Component className={classNames.join(" ")} {...rest}>
+    <Component
+      id={slugify(children)}
+      className={classNames.join(" ")}
+      {...rest}
+    >
       {children}
     </Component>
   );

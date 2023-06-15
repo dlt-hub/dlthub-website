@@ -23,12 +23,11 @@ export default function Copy({ heading, secondaryHeading, content }) {
 }
 
 function CopyContent({ primaryText, secondaryText, image, index }) {
-  const className =
-    index % 2 === 0
-      ? styles.copyContainer
-      : styles.copyContainer + " " + styles.copyContainerOdd;
+  const classes = [styles.copyContainer];
+  if (index % 2 === 0) classes.push(styles.copyContainerOdd);
+  if (!image) classes.push(styles.copyContainerNoImage);
   return (
-    <Container className={className}>
+    <Container className={classes.join(" ")}>
       {image && (
         <div className={styles.image}>
           <GatsbyImage
@@ -38,7 +37,11 @@ function CopyContent({ primaryText, secondaryText, image, index }) {
         </div>
       )}
       <div className={styles.copyContent}>
-        <MarkdownText className={styles.copyHeading} {...primaryText} />
+        <MarkdownText
+          createId={true}
+          className={styles.copyHeading}
+          {...primaryText}
+        />
         <MarkdownText className={styles.copyText} {...secondaryText} />
       </div>
     </Container>

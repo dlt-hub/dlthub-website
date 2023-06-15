@@ -71,10 +71,22 @@
     width: 50%;
   }
 
+  .copyContainerNoImage .copyContent {
+    width: 100%;
+  }
+
   .copyHeading {
     font-size: var(--font-size-4);
   }
   .copyText {
     font-size: var(--font-size-3);
   }
+}
+
+.copyContainerNoImage {
+  margin-top: 80px;
+}
+
+.copyContainerNoImage .copyHeading {
+  font-family: var(--font);
 }

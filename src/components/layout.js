@@ -34,8 +34,7 @@ export default function Layout(props) {
             ></img>
           </a>
           <div className={menustyles}>
-            <a href="/">home</a>
-            <a href="/product">product</a>
+            <a href="/product">product principles</a>
             <a href="/why">why dlt?</a>
             <a href="/about">about us</a>
           </div>

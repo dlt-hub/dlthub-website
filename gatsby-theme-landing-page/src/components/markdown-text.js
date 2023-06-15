@@ -1,9 +1,10 @@
 import * as React from "react";
 import * as sanitize from "sanitize-html";
 import * as styles from "./markdown-text.module.css";
+import slugify from "slugify";
 
 export const getText = (markdownTextNode) =>
-  sanitize(markdownTextNode.childMarkdownRemark.html, { allowedTags: [] });
+  sanitize(markdownTextNode?.childMarkdownRemark?.html, { allowedTags: [] });
 
 const blockOptions = {
   allowedTags: [
@@ -36,6 +37,7 @@ export default function MarkdownText({
   childMarkdownRemark,
   as,
   className = "",
+  createId = false,
   ...rest
 }) {
   if (!childMarkdownRemark) return null;
@@ -43,14 +45,25 @@ export default function MarkdownText({
   const shouldUseInline = !!as;
   const sanitizeOptions = shouldUseInline ? inlineOptions : blockOptions;
   const html = childMarkdownRemark.html;
-  const sanitized = sanitize(html, sanitizeOptions);
+  let sanitized = sanitize(html, sanitizeOptions);
   const Component = as || "div";
+
+  if (createId && childMarkdownRemark) {
+    const id = slugify(
+      sanitize(html, {
+        allowedTags: [],
+        allowedAttributes: {},
+      })
+    ).toLowerCase();
+    rest["id"] = id;
+    sanitized = sanitized.replace(/<\/p>/g, ` <a href="#${id}">#</a></p>`);
+  }
 
   return (
     <Component
       className={[styles.root, className].join(" ")}
       dangerouslySetInnerHTML={{ __html: sanitized }}
       {...rest}
-    />
+    ></Component>
   );
 }
