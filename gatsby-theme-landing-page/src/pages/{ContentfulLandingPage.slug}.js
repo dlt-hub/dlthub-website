@@ -11,10 +11,13 @@ export default function LandingPage(props) {
   return (
     <Layout {...props.data.page}>
       <Page>
-        {sections.map((section) => {
-          const Component = Components[section.component] || DevDebug;
-          return Component ? <Component key={section.id} {...section} /> : null;
-        })}
+        {sections &&
+          sections.map((section) => {
+            const Component = Components[section.component] || DevDebug;
+            return Component ? (
+              <Component key={section.id} {...section} />
+            ) : null;
+          })}
       </Page>
     </Layout>
   );
@@ -35,6 +38,10 @@ export const query = graphql`
         component
         heading
         secondaryHeading
+        image {
+          gatsbyImageData(layout: CONSTRAINED)
+          title
+        }
         content {
           id
           primaryText {
@@ -43,6 +50,11 @@ export const query = graphql`
             }
           }
           secondaryText {
+            childMarkdownRemark {
+              html
+            }
+          }
+          tertiaryText {
             childMarkdownRemark {
               html
             }

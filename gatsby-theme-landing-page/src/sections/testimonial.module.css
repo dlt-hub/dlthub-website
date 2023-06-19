@@ -1,27 +1,36 @@
 .content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-5);
-  margin: auto;
-  max-width: var(--max-width-narrow);
+  margin-top: -50px;
 }
 
 .testimonial {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  position: relative;
+  background-color: #191937;
+  margin: 10px 0px;
+  margin-bottom: 20px;
+  color: white;
+  padding-bottom: 130px;
+  padding-top: 10px;
+}
+
+.testimonial:hover {
+  background-color: #f3ff36;
+  color: #191937;
+}
+.testimonial:hover .authorName,
+.testimonial:hover .authorCompany {
+  color: #191937;
 }
 
 .quote {
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-3);
   font-style: normal;
   font-weight: var(--font-weight-semi-bold);
   border-radius: var(--border-radius);
   max-width: 80%;
   position: relative;
   margin-bottom: var(--space-3);
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
 }
 
 .author {
@@ -35,16 +44,29 @@
 .avatar {
   border-radius: 99999px;
   overflow: hidden;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
 }
 
-.authorInfo {
+.authorName {
   font-size: var(--font-size-3);
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
+  left: 20px;
+  bottom: 100px;
+  position: absolute;
+  font-family: "Space Mono", monospace;
+  color: #f3ff36;
 }
 
-@media screen and (min-width: 1000px) {
-  .quote {
-    padding: 0 var(--space-5);
-  }
+.authorCompany {
+  font-size: var(--font-size-2);
+  font-weight: light;
+  font-style: normal;
+  bottom: 80px;
+  color: white;
+  position: absolute;
+  left: 20px;
+  opacity: 0.8;
 }

@@ -4,6 +4,7 @@
   padding: var(--space-2) var(--space-3);
   text-decoration: none;
   font-weight: 700;
+  font-family: var(--font-button);
 }
 
 .buttonPrimary:hover {

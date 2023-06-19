@@ -1,17 +1,12 @@
 import React from "react";
 import * as styles from "./testimonial.module.css";
 import Section from "../components/section";
-import Heading from "../components/heading";
 import MarkdownText, { getText } from "../components/markdown-text";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-export default function Testimonial({ heading, secondaryHeading, content }) {
+export default function Testimonial({ content }) {
   return (
     <Section>
-      <Heading center>{heading}</Heading>
-      <Heading secondary center>
-        {secondaryHeading}
-      </Heading>
       <div className={styles.content}>
         {content.map((item) => (
           <TestimonialContent {...item} />
@@ -21,7 +16,12 @@ export default function Testimonial({ heading, secondaryHeading, content }) {
   );
 }
 
-function TestimonialContent({ primaryText, secondaryText, avatar }) {
+function TestimonialContent({
+  primaryText,
+  secondaryText,
+  avatar,
+  tertiaryText,
+}) {
   if (!primaryText) return;
 
   return (
@@ -38,8 +38,13 @@ function TestimonialContent({ primaryText, secondaryText, avatar }) {
         )}
         <MarkdownText
           as="cite"
-          className={styles.authorInfo}
+          className={styles.authorName}
           {...secondaryText}
+        />
+        <MarkdownText
+          as="cite"
+          className={styles.authorCompany}
+          {...tertiaryText}
         />
       </div>
     </div>

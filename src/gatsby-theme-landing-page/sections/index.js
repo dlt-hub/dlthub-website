@@ -6,6 +6,8 @@ export { default as Copy } from "gatsby-theme-landing-page/src/sections/copy";
 export { default as CallToAction } from "gatsby-theme-landing-page/src/sections/call-to-action";
 export { default as Benefits } from "gatsby-theme-landing-page/src/sections/benefits";
 export { default as Testimonial } from "gatsby-theme-landing-page/src/sections/testimonial";
+export { default as Team } from "gatsby-theme-landing-page/src/sections/team";
+export { default as Product } from "gatsby-theme-landing-page/src/sections/product";
 
 // This is a custom section component that extends the functionality of the theme.
 export { default as SuperHero } from "../../components/super-hero";

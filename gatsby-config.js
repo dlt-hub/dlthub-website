@@ -5,6 +5,7 @@ require("dotenv").config({
 const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  environment: process.env.CONTENTFUL_ENVIRONMENT,
 };
 
 if (process.env.CONTENTFUL_HOST) {
@@ -49,6 +50,13 @@ module.exports = {
         theme_color: `#000`,
         display: `browser`,
         icon: `src/assets/favicon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Space Mono\:300,400,400i,700`, `Karla`],
+        display: "swap",
       },
     },
   ],

@@ -1,0 +1,51 @@
+.secondaryHeading {
+  margin-bottom: var(--space-4);
+}
+
+.content {
+  margin-top: -50px;
+}
+
+.contentCard {
+  width: 156px;
+  height: 156px;
+  float: left;
+  margin: 5px;
+  margin-left: 0px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.clearall {
+  clear: both;
+}
+
+.contentCard p {
+  margin-top: 0;
+  margin-bottom: var(--space-2);
+}
+
+.contentHeading {
+  font-size: var(--font-size-3);
+  margin-top: 0;
+  margin-bottom: var(--space-2);
+}
+
+.contentImage {
+  margin-bottom: var(--space-3);
+}
+
+.contentCard:hover .contentImage {
+  display: none;
+}
+
+.contentCard:hover {
+  background-color: #f3ff36;
+}
+
+.textContainer {
+  position: absolute;
+  left: 10px;
+  bottom: 0px;
+  display: ;
+}
