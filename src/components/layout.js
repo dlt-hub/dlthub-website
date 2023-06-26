@@ -65,6 +65,7 @@ export default function Layout(props) {
           <a href="/imprint">2023 dltHub imprint</a>
 
           <div className={styles.linkwrapper}>
+            <a href="https://github.com/dlt-hub/dlt">docs</a>
             <a href="https://github.com/dlt-hub/dlt">GitHub</a>
             <a href="https://apply.workable.com/dlthub/">Careers</a>
           </div>
