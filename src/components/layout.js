@@ -37,6 +37,7 @@ export default function Layout(props) {
             <a href="/product">product principles</a>
             <a href="/why">why dlt?</a>
             <a href="/about">about us</a>
+            <a href="/docs/intro">docs</a>
           </div>
           <div className={styles.images}>
             <a href="https://github.com/dlt-hub/dlt">
@@ -61,7 +62,8 @@ export default function Layout(props) {
       <main className={styles.main}>{props.children}</main>
       <div className={styles.footer}>
         <div className={styles.footeri}>
-          <span>2023 dlthub</span>
+          <a href="/imprint">2023 dltHub imprint</a>
+
           <div className={styles.linkwrapper}>
             <a href="https://github.com/dlt-hub/dlt">GitHub</a>
             <a href="https://apply.workable.com/dlthub/">Careers</a>
