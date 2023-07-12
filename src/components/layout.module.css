@@ -48,6 +48,12 @@
   margin-left: auto;
 }
 
+.headeri .community {
+  padding-bottom: 6px;
+  padding-right: 4px;
+  font-size: small;
+}
+
 .headeri .images img {
   margin-left: 10px;
 }
@@ -132,7 +138,7 @@
   z-index: 100;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 930px) {
   .headeri .headerlinks {
     position: fixed;
     left: 0px;

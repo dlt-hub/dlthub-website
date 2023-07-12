@@ -40,11 +40,7 @@ function HeroContent({ primaryText, secondaryText, links }) {
       {links && (
         <div className={styles.buttonContainer}>
           {links.map((link, i) => (
-            <Button
-              key={link.id}
-              {...link}
-              variant={i === 0 ? "primary" : "secondary"}
-            />
+            <Button key={link.id} {...link} variant="primary" />
           ))}
         </div>
       )}
