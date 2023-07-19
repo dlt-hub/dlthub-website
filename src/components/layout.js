@@ -45,7 +45,7 @@ export default function Layout(props) {
               className={styles.community}
               href="https://join.slack.com/t/dlthub-community/shared_invite/zt-1slox199h-HAE7EQoXmstkP_bTqal65g"
             >
-              Join our community
+              join our community
             </a>
             <a href="https://join.slack.com/t/dlthub-community/shared_invite/zt-1slox199h-HAE7EQoXmstkP_bTqal65g">
               <img
@@ -73,8 +73,8 @@ export default function Layout(props) {
 
           <div className={styles.linkwrapper}>
             <a href="https://dlthub.com/docs/intro">docs</a>
-            <a href="https://github.com/dlt-hub/dlt">GitHub</a>
-            <a href="https://apply.workable.com/dlthub/">Careers</a>
+            <a href="https://github.com/dlt-hub/dlt">github</a>
+            <a href="https://apply.workable.com/dlthub/">careers</a>
           </div>
         </div>
       </div>
