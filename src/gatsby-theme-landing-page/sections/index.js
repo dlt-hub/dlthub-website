@@ -8,6 +8,7 @@ export { default as Benefits } from "gatsby-theme-landing-page/src/sections/bene
 export { default as Testimonial } from "gatsby-theme-landing-page/src/sections/testimonial";
 export { default as Team } from "gatsby-theme-landing-page/src/sections/team";
 export { default as Product } from "gatsby-theme-landing-page/src/sections/product";
+export { default as Video } from "gatsby-theme-landing-page/src/sections/video";
 
 // This is a custom section component that extends the functionality of the theme.
 export { default as SuperHero } from "../../components/super-hero";

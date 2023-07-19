@@ -34,8 +34,11 @@
     align-items: center;
   }
 
-  .content {
+  .contentWithImage {
     width: 50%;
+  }
+  .content {
+    width: 80%;
   }
 
   .image {

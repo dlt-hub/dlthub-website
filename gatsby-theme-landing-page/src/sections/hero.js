@@ -6,14 +6,18 @@ import Button from "../components/button";
 import MarkdownText from "../components/markdown-text";
 import Heading from "../components/heading";
 
-export default function Hero({ heading, secondaryHeading, content }) {
+export default function Hero({ heading, secondaryHeading, content, image }) {
   const heroContent = content?.[0];
-  const image = getImage(heroContent?.image);
+  const loadedTopImage = getImage(image);
+  const contentClass = loadedTopImage
+    ? styles.contentWithImage
+    : styles.content;
+  const loadedBannerImage = getImage(content[0].image);
 
   return (
     <Section>
       <div className={styles.root}>
-        <div className={styles.content}>
+        <div className={contentClass}>
           <Heading as="h1" className={styles.heading}>
             {heading}
           </Heading>
@@ -22,12 +26,23 @@ export default function Hero({ heading, secondaryHeading, content }) {
           </Heading>
           <HeroContent {...heroContent} />
         </div>
-        {image && (
+        {loadedTopImage && (
           <div className={styles.image}>
-            <GatsbyImage image={image} alt={image.title || `Hero Image`} />
+            <GatsbyImage
+              image={loadedTopImage}
+              alt={loadedTopImage.title || `Hero Image`}
+            />
           </div>
         )}
       </div>
+      {loadedBannerImage && (
+        <div>
+          <GatsbyImage
+            image={loadedBannerImage}
+            alt={loadedBannerImage.title || `Hero Image`}
+          />
+        </div>
+      )}
     </Section>
   );
 }

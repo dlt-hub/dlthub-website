@@ -22,7 +22,13 @@ export default function Features({ heading, secondaryHeading, content }) {
   );
 }
 
-function Feature({ primaryText, secondaryText, image, links }) {
+function Feature({
+  primaryText,
+  secondaryText,
+  image,
+  links,
+  secondaryImages,
+}) {
   return (
     <div className={styles.featureContainer}>
       <div className={styles.imageColumn}>
@@ -42,6 +48,19 @@ function Feature({ primaryText, secondaryText, image, links }) {
           <LinkContainer>
             {links && links.map((link) => <Link key={link.id} {...link} />)}
           </LinkContainer>
+
+          {secondaryImages && (
+            <div className={styles.secondaryImageContainer}>
+              {secondaryImages.map((image) => (
+                <GatsbyImage
+                  className={styles.secondaryImage}
+                  image={getImage(image)}
+                  alt={image && image.title}
+                />
+              ))}
+            </div>
+          )}
+          <div></div>
         </div>
       </div>
     </div>

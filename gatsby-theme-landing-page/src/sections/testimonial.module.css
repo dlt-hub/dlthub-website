@@ -4,21 +4,11 @@
 
 .testimonial {
   position: relative;
-  background-color: #191937;
   margin: 10px 0px;
   margin-bottom: 20px;
-  color: white;
   padding-bottom: 130px;
   padding-top: 10px;
-}
-
-.testimonial:hover {
-  background-color: #f3ff36;
-  color: #191937;
-}
-.testimonial:hover .authorName,
-.testimonial:hover .authorCompany {
-  color: #191937;
+  background: #e7f6f9;
 }
 
 .quote {
@@ -56,7 +46,7 @@
   bottom: 100px;
   position: absolute;
   font-family: "Space Mono", monospace;
-  color: #f3ff36;
+  color: var(--link-color);
 }
 
 .authorCompany {
@@ -64,7 +54,6 @@
   font-weight: light;
   font-style: normal;
   bottom: 80px;
-  color: white;
   position: absolute;
   left: 20px;
   opacity: 0.8;

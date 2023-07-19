@@ -28,7 +28,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       primaryText: contentfulLandingPageContentPrimaryTextTextNode @link(by: "id", from: "primaryText___NODE")
       secondaryText: contentfulLandingPageContentSecondaryTextTextNode @link(by: "id", from: "secondaryText___NODE")
       tertiaryText: contentfulLandingPageContentTertiaryTextTextNode @link(by: "id", from: "tertiaryText___NODE")
-
+      secondaryImages: [ContentfulAsset] @link(by: "id", from: "secondaryImages___NODE")
     }
 
     type ContentfulLink implements ContentfulReference & ContentfulEntry & Node @dontInfer {

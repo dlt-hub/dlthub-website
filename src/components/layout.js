@@ -16,6 +16,7 @@ export default function Layout(props) {
             onClick={() => {
               setIsMenuOpen(!isMenuOpen);
             }}
+            href="#menu"
           >
             <img
               src={"../../hamburger.png"}
