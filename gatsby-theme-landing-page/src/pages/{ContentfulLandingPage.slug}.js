@@ -66,6 +66,7 @@ export const query = graphql`
           secondaryImages {
             gatsbyImageData(layout: CONSTRAINED)
             title
+            description
           }
           avatar: image {
             gatsbyImageData(layout: FIXED, width: 48, height: 48)

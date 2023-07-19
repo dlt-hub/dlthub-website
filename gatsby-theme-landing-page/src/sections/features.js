@@ -48,15 +48,20 @@ function Feature({
           <LinkContainer>
             {links && links.map((link) => <Link key={link.id} {...link} />)}
           </LinkContainer>
-
           {secondaryImages && (
             <div className={styles.secondaryImageContainer}>
               {secondaryImages.map((image) => (
-                <GatsbyImage
-                  className={styles.secondaryImage}
-                  image={getImage(image)}
-                  alt={image && image.title}
-                />
+                <a
+                  href={image.description}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GatsbyImage
+                    className={styles.secondaryImage}
+                    image={getImage(image)}
+                    alt={image && image.title}
+                  />
+                </a>
               ))}
             </div>
           )}
