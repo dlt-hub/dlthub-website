@@ -19,6 +19,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       content: [ContentfulLandingPageContent] @link(by: "id", from: "content___NODE")
       secondaryHeading: String
       image: ContentfulAsset @link(by: "id", from: "image___NODE")
+      links: [ContentfulLink] @link(by: "id", from: "links___NODE")
     }
 
     type ContentfulLandingPageContent implements ContentfulReference & ContentfulEntry & Node @dontInfer {

@@ -42,6 +42,11 @@ export const query = graphql`
           gatsbyImageData(layout: CONSTRAINED)
           title
         }
+        links {
+          id
+          href
+          text
+        }
         content {
           id
           primaryText {

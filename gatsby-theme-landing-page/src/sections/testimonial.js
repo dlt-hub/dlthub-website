@@ -3,8 +3,9 @@ import * as styles from "./testimonial.module.css";
 import Section from "../components/section";
 import MarkdownText, { getText } from "../components/markdown-text";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Links from "../components/links";
 
-export default function Testimonial({ content }) {
+export default function Testimonial({ content, links }) {
   return (
     <Section>
       <div className={styles.content}>
@@ -12,6 +13,7 @@ export default function Testimonial({ content }) {
           <TestimonialContent {...item} />
         ))}
       </div>
+      {links && <Links links={links} />}
     </Section>
   );
 }
