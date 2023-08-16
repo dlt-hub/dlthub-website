@@ -17,9 +17,20 @@ export default function Team({ heading, secondaryHeading, content }) {
   );
 }
 
-function TeamContent({ primaryText, secondaryText, image }) {
+function TeamContent({ primaryText, secondaryText, image, links }) {
+  const link = links && links[0];
+
+  let className = styles.contentCard;
+  if (link) {
+    className += " " + styles.contentCardWithLink;
+  }
   return (
-    <div className={styles.contentCard}>
+    <div
+      className={className}
+      onClick={() => {
+        if (link) window.open(link.href);
+      }}
+    >
       <div className={styles.textContainer}>
         <MarkdownText
           as="h3"

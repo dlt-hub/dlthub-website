@@ -36,7 +36,7 @@ export default function Hero({ heading, secondaryHeading, content, image }) {
         )}
       </div>
       {loadedBannerImage && (
-        <div>
+        <div className={styles.bannerImage}>
           <GatsbyImage
             image={loadedBannerImage}
             alt={loadedBannerImage.title || `Hero Image`}

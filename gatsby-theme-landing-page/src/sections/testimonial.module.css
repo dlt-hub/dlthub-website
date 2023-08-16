@@ -58,3 +58,9 @@
   left: 20px;
   opacity: 0.8;
 }
+
+@media screen and (min-width: 640px) {
+  .testimonial {
+    width: 80%;
+  }
+}

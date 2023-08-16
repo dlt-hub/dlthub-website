@@ -44,4 +44,8 @@
   .image {
     width: 50%;
   }
+
+  .bannerImage {
+    width: 80%;
+  }
 }

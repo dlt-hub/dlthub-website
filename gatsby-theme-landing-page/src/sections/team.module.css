@@ -16,6 +16,10 @@
   position: relative;
 }
 
+.contentCardWithLink {
+  cursor: pointer;
+}
+
 .clearall {
   clear: both;
 }
@@ -47,5 +51,9 @@
   position: absolute;
   left: 10px;
   bottom: 0px;
-  display: ;
+  display: none;
+}
+
+.contentCard:hover .textContainer {
+  display: block;
 }
