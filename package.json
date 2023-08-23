@@ -34,6 +34,7 @@
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-google-gtag": "^5.8.0",
     "gatsby-plugin-manifest": "^5.0.0",
+    "gatsby-plugin-reddit-pixel": "^1.0.1",
     "gatsby-source-contentful": "^8.0.0",
     "gatsby-theme-landing-page": "1.0.2",
     "react": "^18.2.0",

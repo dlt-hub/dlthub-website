@@ -37,6 +37,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-reddit-pixel`,
+      options: {
+        pixelId: "t2_uamr9xer",
+      },
+    },
+    {
       resolve: `gatsby-theme-landing-page`,
       options: contentfulConfig,
     },
