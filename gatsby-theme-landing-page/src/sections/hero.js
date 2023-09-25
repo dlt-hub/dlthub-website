@@ -12,7 +12,7 @@ export default function Hero({ heading, secondaryHeading, content, image }) {
   const contentClass = loadedTopImage
     ? styles.contentWithImage
     : styles.content;
-  const loadedBannerImage = getImage(content[0].image);
+  const loadedBannerImage = content && getImage(content[0].image);
 
   return (
     <Section>
