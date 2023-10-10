@@ -3,12 +3,18 @@ import { Head } from "gatsby-theme-landing-page";
 import "../styles.css";
 import * as cssVars from "gatsby-theme-landing-page/src/styles/variables.module.css";
 import * as styles from "./layout.module.css";
+import { Script } from "gatsby";
 
 export default function Layout(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menustyles = styles.headerlinks + " " + (isMenuOpen ? styles.open : "");
   return (
     <div className={[cssVars.root, styles.root].join(" ")}>
+      <Script
+        src="https://app.termly.io/embed.min.js"
+        data-auto-block="on"
+        data-website-uuid="10f5aae5-fbc3-4171-b464-ef6c9ea111be"
+      />
       <Head {...props} />
       <div className={styles.header}>
         <div className={styles.headeri} href="#">
