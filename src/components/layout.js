@@ -80,7 +80,9 @@ export default function Layout(props) {
           <a href="https://app.termly.io/document/privacy-policy/e4a72d93-ef95-4e7c-a859-ad32131080b9">
             privacy policy
           </a>
-
+          <a href="https://app.termly.io/document/cookie-policy/c040d44c-b8f1-441e-ab41-bd6da5a56783">
+            cookie policy
+          </a>
           <div className={styles.linkwrapper}>
             <a href="https://dlthub.com/docs/intro">docs</a>
             <a href="https://github.com/dlt-hub/dlt">github</a>
