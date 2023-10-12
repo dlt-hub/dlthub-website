@@ -48,10 +48,13 @@
   margin-left: auto;
 }
 
-.headeri .community {
-  padding-bottom: 6px;
-  padding-right: 4px;
-  font-size: small;
+.headeri .buttonText {
+  padding-bottom: 8px;
+  padding-right: 0px;
+}
+
+.slack {
+  margin-right: 12px;
 }
 
 .headeri .images img {
@@ -114,7 +117,7 @@
 .footer a,
 .header a,
 .footer span {
-  font-family: "Space Mono", monospace;
+  font-family: "Roboto", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: var(--font-size-3);
@@ -138,7 +141,7 @@
   z-index: 100;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1160px) {
   .headeri .headerlinks {
     position: fixed;
     left: 0px;

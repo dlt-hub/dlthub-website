@@ -49,18 +49,26 @@ export default function Layout(props) {
           </div>
           <div className={styles.images}>
             <a
-              className={styles.community}
+              className={styles.buttonText}
               href="https://join.slack.com/t/dlthub-community/shared_invite/zt-1slox199h-HAE7EQoXmstkP_bTqal65g"
             >
-              join our community
+              join community
             </a>
             <a href="https://join.slack.com/t/dlthub-community/shared_invite/zt-1slox199h-HAE7EQoXmstkP_bTqal65g">
               <img
+                className={styles.slack}
                 src={"../../slack-logo.png"}
                 alt="slack logo"
                 width="32"
                 height="32"
               ></img>
+            </a>
+
+            <a
+              className={styles.buttonText}
+              href="https://github.com/dlt-hub/dlt"
+            >
+              star us
             </a>
             <a href="https://github.com/dlt-hub/dlt">
               <img
