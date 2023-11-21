@@ -1,1 +1,2 @@
 /docs/* https://dlt-hub-docs.netlify.app/docs/:splat 200
+/devel/* https://devel--dlt-hub-docs.netlify.app/docs/:splat 200
