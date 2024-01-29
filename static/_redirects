@@ -1,2 +1,3 @@
 /docs/* https://dlt-hub-docs.netlify.app/docs/:splat 200
 /devel/* https://devel--dlt-hub-docs.netlify.app/docs/:splat 200
+/community https://dlthub-community.slack.com/join/shared_invite/zt-1n5193dbq-rCBmJ6p~ckpSFK4hCF2dYA#/shared-invite/email 302
