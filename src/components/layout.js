@@ -84,7 +84,7 @@ export default function Layout(props) {
       <main className={styles.main}>{props.children}</main>
       <div className={styles.footer}>
         <div className={styles.footeri}>
-          <a href="/imprint">2023 dltHub imprint</a>
+          <a href="/imprint">2024 dltHub imprint</a>
           <a href="https://app.termly.io/document/privacy-policy/e4a72d93-ef95-4e7c-a859-ad32131080b9">
             privacy policy
           </a>
