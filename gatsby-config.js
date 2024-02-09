@@ -45,7 +45,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://dlthub.com",
+        sitemap: null,
         policy: [{ userAgent: "GPTBot", allow: "/" }],
       },
     },
