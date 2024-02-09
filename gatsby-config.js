@@ -26,6 +26,7 @@ if (!spaceId || !accessToken) {
 module.exports = {
   siteMetadata: {
     title: "Gatsby Starter Landing Page",
+    siteUrl: `https://dlthub.com`,
     description:
       "Create custom landing pages using Gatsby and Contentful with this Gatsby Starter",
   },
@@ -41,6 +42,9 @@ module.exports = {
       options: {
         pixelId: "t2_uamr9xer",
       },
+    },
+    {
+      resolve: "gatsby-plugin-sitemap",
     },
     {
       resolve: "gatsby-plugin-robots-txt",
