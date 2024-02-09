@@ -43,6 +43,13 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://dlthub.com",
+        policy: [{ userAgent: "GPTBot", allow: "/" }],
+      },
+    },
+    {
       resolve: `gatsby-theme-landing-page`,
       options: contentfulConfig,
     },
