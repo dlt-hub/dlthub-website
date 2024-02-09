@@ -45,8 +45,12 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        sitemap: "",
-        policy: [{ userAgent: "GPTBot", allow: "/" }],
+        policy: [
+          {
+            userAgent: "GPTBot",
+            allow: ["/"],
+          },
+        ],
       },
     },
     {
