@@ -46,6 +46,7 @@ export default function Layout(props) {
             <a href="/success-stories">success stories</a>
             <a href="/about">about</a>
             <a href="/docs/intro">docs</a>
+            <a href="https://info.dlthub.com/contact-sales">contact sales</a>
           </div>
           <div className={styles.images}>
             <a
