@@ -44,7 +44,7 @@ export default function Layout(props) {
             <a href="/product">product principles</a>
             <a href="/why">why dlt?</a>
             <a href="/success-stories">success stories</a>
-            <a href="/about">about us</a>
+            <a href="/about">about</a>
             <a href="/docs/intro">docs</a>
           </div>
           <div className={styles.images}>
