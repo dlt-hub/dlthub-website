@@ -1,4 +1,4 @@
 /docs/pipelines/* https://project-tuba.netlify.app/docs/pipelines/:splat 200
 /docs/* https://dlt-hub-docs.netlify.app/docs/:splat 200
 /devel/* https://devel--dlt-hub-docs.netlify.app/docs/:splat 200
-/community https://join.slack.com/t/dlthub-community/shared_invite/zt-2j1wt7ytz-6o9GrK7B6axgQEkrdOpaXQ 302
+/community https://join.slack.com/t/dlthub-community/shared_invite/zt-2mv7t736v-P1jNU2_YZCEtNgvmgMWXzA 302
